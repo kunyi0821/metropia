@@ -7,8 +7,6 @@ const router = new Router();
 
 app.use(koaBody());
 
-router.post('/article', ctx => {console.log(ctx.request)})
-
 const { attachDirToRouter } = require("koa-router-with-directory");
 const path = require("path");
 
