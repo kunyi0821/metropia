@@ -1,0 +1,36 @@
+###取得資料
+GET http://localhost:3000/fund/
+
+###新增
+POST http://localhost:3000/fund/
+Content-Type:application/json
+
+{
+  "fund_id": 0,
+  "name":"匯入基金",
+  "net_assets_value": 10,
+  "type": "A",
+  "prospectus": "<p>測試用</p>",
+  "charge_currency": "NTD",
+  "value": 600,
+  "trade_fee": 1.5,
+  "user_id": 1,
+  "user_name": "admin"
+}
+
+###編輯
+POST http://localhost:3000/fund/
+Content-Type:application/json
+
+{
+  "fund_id": 3,
+  "name":"編輯基金++",
+  "net_assets_value": 10,
+  "type": "A",
+  "prospectus": "<p>測試用</p>",
+  "charge_currency": "NTD",
+  "value": 500,
+  "trade_fee": 1.5,
+  "user_id": 1,
+  "user_name": "admin"
+}

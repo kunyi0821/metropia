@@ -1,0 +1,23 @@
+###新增
+POST http://localhost:3000/member/register/
+Content-Type:application/json
+
+{
+  "member_id": 0,
+  "name": "HANK",
+  "account":"A123456789",
+  "password": "B123456789",
+  "e_mail": "test@gmail.com"
+}
+
+###編輯
+POST http://localhost:3000/member/register/
+Content-Type:application/json
+
+{
+  "member_id": 1,
+  "name": "HANk",
+  "account":"A123456789",
+  "password": "B123456789",
+  "e_mail": "test@gmail.com"
+}

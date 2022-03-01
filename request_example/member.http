@@ -1,0 +1,5 @@
+POST localhost:3000/member/
+
+{
+  "test":1000
+}
