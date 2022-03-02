@@ -20,25 +20,25 @@ exports.post = async function (ctx) {
 
         let sSql = `
             SELECT 
-                a.account_name,
-                a.account,
-                a.password,
-                a.is_authorize
-            FROM    
-                member m
-            LEFT JOIN
-                account a on m.member_id = a.member_id
+                o.order_id,
+                f.name,
+                o.status,
+                o.net_assets_value,
+                o.quantity,
+                o.trade_fee,
+                o.total 
+            FROM  
+                \`order\` o
+            LEFT JOIN 
+                fund f on o.fund_id = f.fund_id 
             WHERE 
-                m.member_id = ?
+                o.member_id = ?
+            ORDER BY 
+                o.created_at DESC
         `
 
         let sResult = await query(sSql, [member_id]);
 
-        if (sResult.length > 0) {
-            for (const row of sResult) {
-                row.is_authorize = Boolean(row.is_authorize);
-            }
-        }
 
         result.data = sResult;
 
