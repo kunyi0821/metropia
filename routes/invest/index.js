@@ -55,6 +55,7 @@ exports.get = async function (ctx){
                 order_id, member_id, fund_id
             }
 
+            //呼叫寄送通知信
             await notifyLetter(options);
 
             throw Error(`訂單成立失敗`)

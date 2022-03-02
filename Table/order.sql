@@ -1,4 +1,4 @@
-CREATE TABLE `account` (
+CREATE TABLE `order` (
     order_id int(11) AUTO_INCREMENT PRIMARY KEY COMMENT "訂單編號",
     member_id int(11) NOT NULL COMMENT "會員編號 ref.member.member_id",
     fund_id int(11) NOT NULL COMMENT "基金編號 ref.fund.fund_id",
