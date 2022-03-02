@@ -6,7 +6,7 @@ const { query } = require('../../utils/async-db')
 module.exports = async (options) => {
 
     let result = {
-        status: true;
+        status: true
     }
 
     let order_id = options.order_id;
