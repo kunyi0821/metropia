@@ -5,7 +5,6 @@ CREATE TABLE IF NOT EXISTS  fund (
     type varchar(5) NOT NULL COMMENT "基金類型 ",
     prospectus text COMMENT "招股說明書",
     charge_currency VARCHAR(25) NOT NULL COMMENT "交易貨幣",
-    value int(11) NOT NULL COMMENT "基金價格",
     trade_fee float(11) NOT NULL COMMENT "手續費 (%)",
     updated_id int(11) NOT NULL COMMENT "更改人編號",
     updated_name varchar(25) NOT NULL COMMENT "更改人名稱",

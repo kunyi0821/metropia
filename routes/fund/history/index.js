@@ -23,7 +23,6 @@ exports.get = async function (ctx){
                         "fund_history_id", fh.fund_history_id,
                         "net_assets_value", fh.net_assets_value,
                         "trade_fee", fh.trade_fee, 
-                        "value", fh.value,
                         "charge_currency", fh.charge_currency 
                     )
                 ORDER BY fh.created_at DESC), ']' 

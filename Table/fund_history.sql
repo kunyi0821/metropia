@@ -4,7 +4,6 @@ CREATE TABLE `fund_history` (
     net_assets_value int(25) NOT NULL COMMENT "資產淨值",
 
     charge_currency VARCHAR(25) NOT NULL COMMENT "交易貨幣",
-    value int(11) NOT NULL COMMENT "基金價格",
     trade_fee float(11) NOT NULL COMMENT "手續費 (%)",
 
     created_id int(11) NOT NULL COMMENT "創建人編號",
