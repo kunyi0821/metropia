@@ -3,10 +3,10 @@ const { query } = require('../../utils/async-db')
 /**
  * 取得基金列表
  *
- * @param req
+ * @param ctx
  * @returns {Promise<void>}
  */
-exports.get = async function (req){
+exports.get = async function (ctx){
 
     let result = {
         status: true,
@@ -21,7 +21,7 @@ exports.get = async function (req){
         result.data = sResult;
     }
 
-    req.body = result;
+    ctx.body = result;
 }
 
 

@@ -1,0 +1,2 @@
+###取得資料
+GET http://localhost:3000/fund/history/
